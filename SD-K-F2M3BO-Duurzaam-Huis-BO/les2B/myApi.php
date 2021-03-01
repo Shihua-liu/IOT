@@ -30,11 +30,16 @@
 
                  // hier moet jij zelf code schrijven
                     
-                case "easter egg":
-                    print " <br> hier moet jij zelf code schrijven";
+                case "pi":
+                        print " <br> hier ziet u pi <br>";
+                        echo (pi());
                     break;
-                case "bedenk zelf een code":
-                    // jouw code hier
+                case "rng":
+                        print " <br> hier een random number generator <br>";
+                        echo(rand());
+                    break;
+                case "kekw":
+                        print " <br> ik speel veel games";
                     break;
                   // einde eigen code  
                 default:

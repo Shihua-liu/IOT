@@ -14,8 +14,16 @@
             <legend>Data verzenden met HTTP GET protocol</legend>
             <label>Data</label>
             <input type = "text" name = "data" id="myTextInput">
-            <input type = "button" id = "myButton" value = "Submit HTTP GET AJAX ">
+            <input type = "button" id = "myButton" value = "Submit HTTP GET AJAX " style="color: red; background-color: black;">
+            <input type = "button" value = "naar vorige opdracht" onclick="window.location.href='../les2A/testMyApi.html'" style="color: red; background-color: black;">
             <img src="duurzaam_huis_logo.png" width="200" alt="logo" title="logo">
+            <ul>
+              <li>server</li>
+              <li>tijd</li>
+              <li>pi</li>
+              <li>rng</li>
+              <li>kekw</li>
+            </ul>
        </fieldset>
     </form>
     <div id="antwoordHier"></div>
@@ -35,6 +43,7 @@
           // voorbeeld http_Get_String = myApi.php?data=qwerty 
           console.log(http_Get_String); // debug
           makeAjaxCall(http_Get_String, 'GET'). then (writeData); // doe het HTTP request
+          alert("wilt u verder gaan?");
       }
 
       function writeData(dataVanServer){
